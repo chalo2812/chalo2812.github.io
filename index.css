@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Questrial");
+
+
 :root {
   --bg-color: rgb(10, 10, 10);
   --text-color: #fff;
@@ -15,4 +19,8 @@
     ),
     url("background.jpg") center center fixed;
   --height: 50vh;
+}
+
+#profile {
+	background: url(https://avatars3.githubusercontent.com/u/6732307?v=4) center;
 }
