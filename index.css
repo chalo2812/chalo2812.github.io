@@ -22,5 +22,13 @@
 }
 
 #profile {
-	background: url(https://avatars3.githubusercontent.com/u/6732307?v=4) center;
+	background: url("https://avatars3.githubusercontent.com/u/6732307?v=4") center;
+}
+
+.footer {
+  background-image: url("https://i.stack.imgur.com/AZ2Xw.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 300px;
 }
