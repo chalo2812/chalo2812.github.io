@@ -11,13 +11,13 @@
       rgba(10, 10, 10, 0.3),
       rgb(10, 10, 10, 1)
     ),
-    url("background.jpg");
+    url("./background.jpg");
   --background-background: linear-gradient(
       0deg,
       rgba(10, 10, 10, 1),
       rgba(10, 10, 10, 0.6)
     ),
-    url("background.jpg") center center fixed;
+    url("./background.jpg") center center fixed;
   --height: 50vh;
 }
 
