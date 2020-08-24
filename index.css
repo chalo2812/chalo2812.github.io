@@ -20,10 +20,6 @@
   --height: 50vh;
 }
 
-#profile {
-	background: url("https://avatars3.githubusercontent.com/u/6732307?v=4") center;
-}
-
 .footer {
   background-color: black;
   background-position: center center;
@@ -44,5 +40,5 @@
 }
 
 .text-white {
-	text-color: white;
+	color: white;
 }
