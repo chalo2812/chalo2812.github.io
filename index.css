@@ -28,8 +28,6 @@
   min-height: 100px;
   clear: both;
   position: relative;
-  height: 200px;
-  margin-top: -200px;
 }
 
 .navbar {
@@ -41,8 +39,4 @@
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 	padding: .5rem 1rem;
-}
-
-.text-white {
-	color: white;
 }
