@@ -1,3 +1,3 @@
-function myFunction() {
-  document.getElementById("info").innerHTML = "Paragraph changed.";
+function cambiarMensaje(this) {
+  document.getElementById(this).innerHTML = "Paragraph changed.";
 }
