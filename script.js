@@ -1,3 +1,3 @@
-function cambiarMensaje(this) {
-  document.getElementById(this).innerHTML = "Paragraph changed.";
+function cambiarMensaje(id) {
+  document.getElementById(""+id+"").innerHTML = "Paragraph changed.";
 }
