@@ -20,6 +20,26 @@
   --height: 50vh;
 }
 
+#info, #home {
+	float:none;
+	width:100%;
+}
+
+@media screen and (min-width: 800px) {
+	#info, #home {
+		float:left;
+		width:50%;
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	#info, #home {
+		float:left;
+		width:33%;
+	}
+}
+
+
 .footer {
   background-color: black;
   background-position: center center;
