@@ -41,13 +41,10 @@
 
 .footer {
   background-color: white;
-  background-position: center center;
+  background-position: bottom center;
   background-repeat: no-repeat;
-  width: 100%;
-  min-height: 300px;
   clear: both;
   background-image: url("./background.jpg");
-  height: 100%;
 }
 
 .navbar {
