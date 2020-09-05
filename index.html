@@ -20,7 +20,7 @@
   </head>
   <body>
     <div class="pos-f-t">
-      <nav class="navbar navbar-dark bg-dark">
+      <nav class="navbar navbar-dark navbar-fixed-top bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse"
           data-target="#navbarToggleExternalContent" aria-label="Toggle navigation"
           aria-controls="navbarToggleExternalContent" aria-expanded="false">
@@ -29,22 +29,20 @@
       </nav>
       <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-primary p-4">
-          <h4 class="text-white">Collapsed content</h4>
-          <span class="text-muted">Toggleable via the navbar brand.</span>
+          <a class="navbar-item b-button b-hover-black b-hide-medium b-hide-large b-right"
+             href="javascript:void(0);" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i>
+          </a>
+          <a href="#home" class="navbar-item b-button b-hide-small" onclick="cambiarMensaje('home')">
+            <i class="fa fa-home"></i> HOME
+          </a>
+          <a href="#info" class="navbar-item b-button b-hide-small" onclick="cambiarMensaje('info')">
+            <i class="fa fa-user"></i> INFO
+          </a>
         </div>
       </div>
     </div>
     <div class="container navbar b-card b-animate-top b-white" id="mySidenav">
-      <a class="navbar-item b-button b-hover-black b-hide-medium b-hide-large b-right"
-         href="javascript:void(0);" title="Toggle Navigation Menu">
-        <i class="fa fa-bars"></i>
-      </a>
-      <a href="#home" class="navbar-item b-button b-hide-small" onclick="cambiarMensaje('home')">
-        <i class="fa fa-home"></i> HOME
-      </a>
-      <a href="#info" class="navbar-item b-button b-hide-small" onclick="cambiarMensaje('info')">
-        <i class="fa fa-user"></i> INFO
-      </a>
     </div>
     <div id="home" class="container navbar-block b-white b-hide b-hide-large b-hide-medium">
       <h4 class="text-center"></h4>
