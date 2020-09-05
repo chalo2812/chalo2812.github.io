@@ -48,12 +48,15 @@
 }
 
 .navbar {
-	display: -ms-flexbox;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
 	-ms-flex-align: center;
-	align-items: center;
 	-ms-flex-pack: justify;
+	-ms-flex-wrap: wrap;
+	align-items: center;
+	display: -ms-flexbox;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	padding: .5rem 1rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
