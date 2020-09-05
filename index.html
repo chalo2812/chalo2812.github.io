@@ -24,9 +24,16 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse"
           data-target="#navbarToggleExternalContent" aria-label="Toggle navigation"
           aria-controls="navbarToggleExternalContent" aria-expanded="false">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon" onclick="openNav()"></span>
         </button>
       </nav>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
       <div class="collapse" id="navbarToggleExternalContent">
         <div class="p-4">
           <a href="#home" class="navbar-item b-button b-hide-small" onclick="cambiarMensaje('home')">
@@ -38,8 +45,6 @@
           </a>
         </div>
       </div>
-    </div>
-    <div class="container navbar b-card b-animate-top b-white" id="mySidenav">
     </div>
     <div id="home" class="container navbar-block b-white b-hide b-hide-large b-hide-medium">
       <h4 class="text-center"></h4>
