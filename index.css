@@ -25,19 +25,6 @@
 	width:100%;
 }
 
-@media screen and (min-width: 800px) {
-	#info, #home, #index {
-		float:left;
-		width:50%;
-	}
-}
-
-@media screen and (min-width: 1025px) {
-	#info, #home, #index {
-		float:left;
-		width:33%;
-	}
-}
 
 .footer {
   background-color: white;
