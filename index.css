@@ -20,20 +20,20 @@
   --height: 50vh;
 }
 
-#info, #home {
+#info, #home, #index  {
 	float:none;
 	width:100%;
 }
 
 @media screen and (min-width: 800px) {
-	#info, #home {
+	#info, #home, #index {
 		float:left;
 		width:50%;
 	}
 }
 
 @media screen and (min-width: 1025px) {
-	#info, #home {
+	#info, #home, #index {
 		float:left;
 		width:33%;
 	}
