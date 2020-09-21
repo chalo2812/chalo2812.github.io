@@ -99,3 +99,8 @@
   transition: margin-left .5s;
   padding: 20px;
 }
+
+.eliminar {
+	font-size:30px;
+	cursor:pointer
+}
