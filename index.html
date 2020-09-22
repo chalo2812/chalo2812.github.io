@@ -21,21 +21,14 @@
   <body>
     <div class="pos-f-t">
       <div class="navbar navbar-dark bg-dark fixed-top">
-        <span class="text-center text-secondary eliminar" onclick="openNav()">
+        <span class="text-center text-secondary eliminar" onclick="changeNav()">
           &#9776;</span>
       </div>
-      <nav class="navbar navbar-dark bg-dark fixed-top" style="display:none;">
-        <button class="navbar-toggler" type="button" data-toggle="collapse"
-          data-target="#navbarToggleExternalContent" aria-label="Toggle navigation"
-          aria-controls="navbarToggleExternalContent" aria-expanded="false">
-          <span class="navbar-toggler-icon" onclick="openNav()"></span>
-        </button>
-      </nav>
       <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#index" onclick="closeNav()">Inicio</a>
-        <a href="#home" onclick="closeNav()">Home</a>
-        <a href="#info" onclick="closeNav()">Info</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="changeNav()">&times;</a>
+        <a href="#index" onclick="changeNav()">Inicio</a>
+        <a href="#home" onclick="changeNav()">Home</a>
+        <a href="#info" onclick="changeNav()">Info</a>
       </div>
     </div>
     <br>
