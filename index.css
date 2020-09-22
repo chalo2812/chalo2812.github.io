@@ -88,6 +88,11 @@
 	box-shadow: 10px 10px 5px grey;
 }
 
+.text-centrado {
+   padding: 100px 0;
+   text-align: center;
+}
+
 #main {
   transition: margin-left .5s;
   padding: 20px;
