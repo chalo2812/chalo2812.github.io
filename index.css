@@ -82,7 +82,9 @@
 }
 
 .backgroundInicio {
-	background-image: url("./assets/background.jpg");
+	background-image: url("./assets/backgroundInicio.jpg");
+	height: 200px;
+	background-repeat: no-repeat;
 }
 
 #main {
