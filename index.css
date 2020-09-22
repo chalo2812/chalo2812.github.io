@@ -84,7 +84,7 @@
 .backgroundInicio {
 	height: 200px;
 	background-repeat: no-repeat;
-	background: linear-gradient(to center, rgba(255,255,255,0), rgba(255,255,255,1)), url("./assets/backgroundInicio.jpg");
+	background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1)), url("./assets/backgroundInicio.jpg");
 	box-shadow: 10px 10px 5px grey;
 }
 
