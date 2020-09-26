@@ -23,6 +23,7 @@
 #info, #home, #index  {
 	float:none;
 	width:95%;
+	padding-left: 50px;
 }
 
 .footer {
