@@ -20,10 +20,10 @@
   --height: 50vh;
 }
 
-#info, #home, #index  {
-	float:none;
-	width:95%;
-	padding-left: 50px;
+#informacion, #home, #index {
+  float:none;
+  width:95%;
+  padding-left: 50px;
 }
 
 .footer {
@@ -35,14 +35,14 @@
 }
 
 .navbar {
-	-ms-flex-align: center;
-	-ms-flex-pack: justify;
-	-ms-flex-wrap: wrap;
-	align-items: center;
-	display: -ms-flexbox;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	padding: .5rem 1rem;
+  -ms-flex-align: center;
+  -ms-flex-pack: justify;
+  -ms-flex-wrap: wrap;
+  align-items: center;
+  display: -ms-flexbox;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: .5rem 1rem;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -83,17 +83,17 @@
 }
 
 .backgroundInicio {
-	height: 241px;
-	background-repeat: no-repeat;
-	background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1)), url("./assets/backgroundInicio.jpg");
-	box-shadow: 10px 10px 5px grey;
-	padding-left: 50px;
-	margin-top: 30px;
+  height: 241px;
+  background-repeat: no-repeat;
+  background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1)), url("./assets/backgroundInicio.jpg");
+  box-shadow: 10px 10px 5px grey;
+  padding-left: 50px;
+  margin-top: 30px;
 }
 
 .text-centrado {
-   padding: 100px 0;
-   text-align: center;
+  padding: 100px 0;
+  text-align: center;
 }
 
 #main {
@@ -102,6 +102,6 @@
 }
 
 .eliminar {
-	font-size:25px;
-	cursor:pointer;
+  font-size:25px;
+  cursor:pointer;
 }
