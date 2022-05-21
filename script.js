@@ -3,7 +3,7 @@ function cambiarMensaje(id) {
 }
 
 function openNav() {
-  document.getElementById("mySidenav").style.width = "100%";
+  document.getElementById("mySidenav").style.width = "30%";
 }
 
 function closeNav() {
@@ -11,7 +11,7 @@ function closeNav() {
 }
 
 function changeNav() {
-  if (document.getElementById("mySidenav").style.width == "100%")
+  if (document.getElementById("mySidenav").style.width == "30%")
     closeNav();
   else
     openNav();
