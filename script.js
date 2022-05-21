@@ -1,7 +1,3 @@
-function cambiarMensaje(id) {
-  document.getElementById(""+id+"").innerHTML = "Paragraph changed.";
-}
-
 function openNav() {
   document.getElementById("mySidenav").style.width = "30%";
 }
