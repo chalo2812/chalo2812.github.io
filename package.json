@@ -1,0 +1,44 @@
+{
+  "name": "chalo2812.github.io",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "index.html",
+  "scripts": {
+    "start": "react-scripts start"
+  },
+  "author": "Gonzalo Sola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chalo2812/chalo2812.github.io/issues"
+  },
+  "homepage": "https://github.com/chalo2812/chalo2812.github.io#readme",
+  "dependencies": {
+    "browserslist": "^4.23.0",
+    "npm-run-script": "^0.0.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
