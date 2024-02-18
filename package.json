@@ -5,6 +5,7 @@
   "main": "index.html",
   "scripts": {
     "start": "react-scripts start",
+    "build": "react-scripts build",
     "netlify-deploy": "netlify deploy",
     "netlify-build": "netlify build",
     "netlify-serve": "netlify serve"
