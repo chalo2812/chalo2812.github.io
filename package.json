@@ -4,7 +4,10 @@
   "description": "Portfolio",
   "main": "index.html",
   "scripts": {
-    "start": "react-scripts start"
+    "start": "react-scripts start",
+    "netlify-deploy": "netlify deploy",
+    "netlify-build": "netlify build",
+    "netlify-serve": "netlify serve"
   },
   "author": "Gonzalo Sola",
   "license": "ISC",
@@ -14,10 +17,12 @@
   "homepage": "https://github.com/chalo2812/chalo2812.github.io#readme",
   "dependencies": {
     "browserslist": "^4.23.0",
+    "netlify-cli": "^17.16.2",
+    "npm": "^10.4.0",
     "npm-run-script": "^0.0.4",
     "react": "^18",
     "react-dom": "^18",
-    "react-scripts": "^5.0.1"
+    "react-scripts": "^3.0.1"
   },
   "devDependencies": {
     "@types/node": "^20",
