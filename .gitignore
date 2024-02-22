@@ -3,5 +3,5 @@
 node_modules/
 # Local Netlify folder
 .netlify/
-
-.build/
+# Folder build of Netlify
+build/
