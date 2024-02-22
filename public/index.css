@@ -10,13 +10,13 @@
       rgba(10, 10, 10, 0.3),
       rgb(10, 10, 10, 1)
     ),
-    url("./background.jpg");
+    url("./public/assets/background.jpg");
   --background-background: linear-gradient(
       0deg,
       rgba(10, 10, 10, 1),
       rgba(10, 10, 10, 0.6)
     ),
-    url("./background.jpg") center center fixed;
+    url("./public/assets/background.jpg") center center fixed;
   --height: 50vh;
 }
 
@@ -31,7 +31,7 @@
   background-position: bottom center;
   background-repeat: no-repeat;
   clear: both;
-  background-image: url("./assets/background.jpg");
+  background-image: url("./public/assets/background.jpg");
 }
 
 .navbar {
@@ -85,7 +85,7 @@
 .backgroundInicio {
   height: 241px;
   background-repeat: no-repeat;
-  background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1)), url("./assets/backgroundInicio.jpg");
+  background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1)), url("./public/assets/backgroundInicio.jpg");
   box-shadow: 10px 10px 5px grey;
   padding-left: 50px;
   margin-top: 30px;
