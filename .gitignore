@@ -2,6 +2,6 @@
 .idea/
 node_modules/
 # Local Netlify folder
-.netlify
+.netlify/
 
-.build
+.build/
