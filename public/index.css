@@ -32,6 +32,7 @@
   background-repeat: no-repeat;
   clear: both;
   background-image: url("./assets/background.jpg");
+  background-size: cover;
 }
 
 .navbar {
@@ -89,6 +90,7 @@
   box-shadow: 10px 10px 5px grey;
   padding-left: 50px;
   margin-top: 30px;
+  background-size: cover;
 }
 
 .text-centrado {
