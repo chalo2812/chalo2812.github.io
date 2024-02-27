@@ -27,11 +27,12 @@
 }
 
 .footer {
-  background-color: white;
+  background-color: red;
   background-position: bottom center;
   background-repeat: no-repeat;
   clear: both;
   background-image: url("./assets/background.jpg");
+  background-size: cover;
 }
 
 .navbar {
