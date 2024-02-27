@@ -2,7 +2,7 @@
   "name": "chalo2812",
   "version": "1.0.0",
   "description": "Portfolio",
-  "main": "index.html",
+  "main": "/public/index.html",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
