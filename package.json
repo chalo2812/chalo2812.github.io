@@ -2,7 +2,7 @@
   "name": "chalo2812",
   "version": "1.0.0",
   "description": "Portfolio",
-  "main": "/public/index.html",
+  "main": "index.html",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -13,10 +13,6 @@
   },
   "author": "Gonzalo Sola",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/chalo2812/chalo2812.github.io/issues"
-  },
-  "homepage": "https://github.com/chalo2812/chalo2812.github.io#readme",
   "dependencies": {
     "@sideway/address": "^5.0.0",
     "browserslist": "^4.23.0",
