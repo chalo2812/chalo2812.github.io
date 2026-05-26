@@ -1,64 +1,52 @@
 export default function Hero() {
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden terminal-grid pt-16">
-      <div className="absolute inset-0 bg-gradient-to-b from-term-bg via-term-bg/95 to-term-bg pointer-events-none" />
+    <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-main pt-16">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-accent-500/10 blur-3xl animate-float" />
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 rounded-full bg-accent-300/10 blur-3xl animate-float" style={{ animationDelay: '-3s' }} />
+      </div>
 
-      <div className="relative z-10 text-center px-4 max-w-3xl mx-auto animate-fade-in">
-        <div className="inline-flex items-center gap-1.5 mb-4 px-3 py-1 rounded border border-term-border bg-term-surface">
-          <span className="w-2 h-2 rounded-full bg-red-500" />
-          <span className="w-2 h-2 rounded-full bg-yellow-500" />
-          <span className="w-2 h-2 rounded-full bg-accent-500" />
-          <span className="text-xs text-term-dim ml-1 font-mono">terminal — 80x24</span>
+      <div className="relative z-10 text-center px-6 max-w-3xl mx-auto animate-fade-in">
+        <div className="glass-card inline-flex items-center gap-2 px-4 py-2 mb-6">
+          <span className="w-2 h-2 rounded-full bg-accent-500 animate-pulse" />
+          <span className="text-xs text-gray-500">Disponible para proyectos</span>
         </div>
 
-        <div className="text-left max-w-lg mx-auto mb-8">
-          <p className="text-sm text-term-dim font-mono mb-2">
-            <span className="text-accent-500">gonzalo@portfolio</span>
-            <span className="text-gray-500">:</span>
-            <span className="text-blue-400">~</span>
-            <span className="text-gray-500">$ </span>
-            cat about.txt
-          </p>
+        <img
+          src="https://media.licdn.com/dms/image/v2/C4D03AQFA3Asbg0NTDA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1617131363771?e=1781136000&v=beta&t=TQiMCXFbp1SG8vY01IGsh9sSygtE89zyxinERgIPcmo"
+          alt="Gonzalo Sola"
+          className="w-28 h-28 rounded-2xl mx-auto mb-6 border border-white/10 shadow-2xl"
+        />
 
-          <div className="border border-term-border rounded p-4 bg-term-surface">
-            <img
-              src="https://media.licdn.com/dms/image/v2/C4D03AQFA3Asbg0NTDA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1617131363771?e=1781136000&v=beta&t=TQiMCXFbp1SG8vY01IGsh9sSygtE89zyxinERgIPcmo"
-              alt="Gonzalo Sola"
-              className="w-16 h-16 rounded-full mx-auto mb-3 border border-term-border"
-            />
-            <h1 className="text-lg md:text-xl font-mono text-gray-100 text-center">
-              &gt; Gonzalo Sola
-            </h1>
-            <p className="text-sm text-accent-500 text-center font-mono mt-1">
-              Desarrollador Java Senior
-            </p>
-            <p className="text-xs text-term-dim text-center mt-3 leading-relaxed max-w-sm mx-auto">
-              Autodidacta y apasionado por la tecnología moderna.
-              Transformando ideas en código con más de 10 años de experiencia.
-            </p>
-          </div>
-        </div>
+        <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">
+          Gonzalo Sola
+        </h1>
+
+        <p className="text-lg md:text-xl text-gray-400 mb-2 font-light">
+          Desarrollador Java Senior
+        </p>
+
+        <p className="text-gray-500 max-w-xl mx-auto mb-10 text-sm leading-relaxed">
+          Autodidacta y apasionado por la tecnología moderna.
+          Más de 10 años transformando ideas en código.
+        </p>
 
         <div className="flex items-center justify-center gap-4">
           <a
             href="#projects"
             onClick={(e) => { e.preventDefault(); document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' }) }}
-            className="px-4 py-2 border border-accent-500 text-accent-500 hover:bg-accent-500/10 text-xs font-mono transition-all rounded"
+            className="px-6 py-3 rounded-xl bg-accent-500 hover:bg-accent-600 text-white font-medium transition-all shadow-lg shadow-accent-500/25"
           >
-            $ ls proyectos/
+            Ver proyectos
           </a>
           <a
             href="#contact"
             onClick={(e) => { e.preventDefault(); document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' }) }}
-            className="px-4 py-2 border border-term-border text-term-dim hover:text-gray-100 hover:border-gray-600 text-xs font-mono transition-all rounded"
+            className="px-6 py-3 rounded-xl glass-hover text-gray-300 font-medium transition-all"
           >
-            $ cat contacto
+            Contacto
           </a>
         </div>
-
-        <p className="mt-6 text-xs text-term-dim font-mono animate-blink">
-          █
-        </p>
       </div>
     </section>
   )

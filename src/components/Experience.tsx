@@ -2,34 +2,32 @@ import { experiences } from '../data/experience'
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-20 px-4 terminal-grid">
+    <section id="experience" className="py-24 px-6 bg-gradient-main">
       <div className="max-w-3xl mx-auto">
-        <div className="flex items-center gap-2 mb-2">
-          <span className="text-xs text-term-dim font-mono">
-            <span className="text-accent-500">gonzalo@portfolio</span>
-            <span className="text-gray-500">:</span>
-            <span className="text-blue-400">~</span>
-            <span className="text-gray-500">$ </span>
-            cat experiencia.log
-          </span>
-        </div>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-2 text-gray-100">
+          Experiencia
+        </h2>
+        <p className="text-gray-500 text-center mb-14 text-sm">
+          Trayectoria profesional
+        </p>
 
-        <div className="border border-term-border rounded p-4 bg-term-surface/50 mb-10">
-          <div className="space-y-0 divide-y divide-term-border">
+        <div className="relative">
+          <div className="absolute left-6 top-0 bottom-0 w-px bg-gradient-to-b from-accent-500/50 via-accent-500/20 to-transparent" />
+
+          <div className="space-y-6">
             {experiences.map((exp, i) => (
-              <div key={i} className="py-4 first:pt-0 last:pb-0 animate-slide-up" style={{ animationDelay: `${i * 80}ms` }}>
-                <div className="flex items-start gap-3">
-                  <span className="text-accent-500 text-xs font-mono mt-0.5 shrink-0">{'>'}</span>
-                  <div className="min-w-0">
-                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-0.5">
-                      <h3 className="text-sm font-mono text-gray-200">{exp.role}</h3>
-                      {exp.period && (
-                        <span className="text-[10px] text-term-dim font-mono">{exp.period}</span>
-                      )}
-                    </div>
-                    <p className="text-xs text-accent-500/80 font-mono mt-0.5">{exp.company}</p>
-                    <p className="text-xs text-term-dim font-mono mt-1 leading-relaxed">{exp.description}</p>
+              <div key={i} className="relative pl-16 animate-slide-up" style={{ animationDelay: `${i * 80}ms` }}>
+                <div className="absolute left-4 top-6 w-4 h-4 rounded-full bg-accent-500 border-4 border-[rgb(2,2,6)] shadow-lg shadow-accent-500/20" />
+
+                <div className="glass-card p-6">
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-1">
+                    <h3 className="font-semibold text-gray-100">{exp.role}</h3>
+                    {exp.period && (
+                      <span className="text-xs text-gray-500">{exp.period}</span>
+                    )}
                   </div>
+                  <p className="text-sm text-accent-400 mb-2">{exp.company}</p>
+                  <p className="text-sm text-gray-500 leading-relaxed">{exp.description}</p>
                 </div>
               </div>
             ))}

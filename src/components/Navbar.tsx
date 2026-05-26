@@ -1,11 +1,11 @@
 import { useState } from 'react'
 
 const navItems = [
-  { label: 'hero', href: '#hero' },
-  { label: 'skills', href: '#skills' },
-  { label: 'proyectos', href: '#projects' },
-  { label: 'experiencia', href: '#experience' },
-  { label: 'contacto', href: '#contact' },
+  { label: 'Inicio', href: '#hero' },
+  { label: 'Skills', href: '#skills' },
+  { label: 'Proyectos', href: '#projects' },
+  { label: 'Experiencia', href: '#experience' },
+  { label: 'Contacto', href: '#contact' },
 ]
 
 export default function Navbar() {
@@ -18,59 +18,57 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-term-border bg-term-bg/95 backdrop-blur-sm">
-      <div className="flex items-center h-9 px-3 gap-2 border-b border-term-border bg-term-surface">
-        <span className="terminal-dot red" />
-        <span className="terminal-dot yellow" />
-        <span className="terminal-dot green" />
-        <span className="text-xs text-term-dim ml-2 font-mono select-none">
-          gonzalo@portfolio:~$
-        </span>
-      </div>
-
-      <div className="flex items-center justify-between px-4 h-10">
+    <nav className="fixed top-0 left-0 right-0 z-50 glass">
+      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <a
           href="#hero"
           onClick={(e) => { e.preventDefault(); handleClick('#hero') }}
-          className="flex items-center gap-2 text-xs text-accent-500 font-mono hover:underline"
+          className="flex items-center gap-3 text-gray-100 font-semibold"
         >
-          <span className="w-6 h-6 rounded-full border border-accent-500 bg-term-surface flex items-center justify-center text-accent-500 text-[10px] font-bold font-mono shrink-0">
+          <span className="w-8 h-8 rounded-xl bg-gradient-to-br from-accent-400 to-accent-600 flex items-center justify-center text-white text-sm font-bold shadow-lg shadow-accent-500/20">
             G
           </span>
-          ~/portfolio $
+          Gonzalo Sola
         </a>
 
         <button
           onClick={() => setOpen(!open)}
-          className="text-term-dim hover:text-accent-500 transition-colors md:hidden text-xs font-mono"
+          className="text-gray-400 hover:text-white transition-colors md:hidden"
+          aria-label="Menú"
         >
-          {open ? '[close]' : '[menu]'}
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            {open ? (
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            ) : (
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            )}
+          </svg>
         </button>
 
-        <div className="hidden md:flex items-center gap-5">
+        <div className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (
             <a
               key={item.href}
               href={item.href}
               onClick={(e) => { e.preventDefault(); handleClick(item.href) }}
-              className="text-xs text-term-dim hover:text-accent-500 transition-colors font-mono"
+              className="text-sm text-gray-400 hover:text-white transition-colors"
             >
-              $ cat {item.label}
+              {item.label}
             </a>
           ))}
         </div>
       </div>
 
       {open && (
-        <div className="md:hidden border-t border-term-border bg-term-surface px-4 py-3 space-y-2">
+        <div className="md:hidden border-t border-white/5 px-6 py-4 space-y-3 glass">
           {navItems.map((item) => (
             <a
               key={item.href}
               href={item.href}
               onClick={(e) => { e.preventDefault(); handleClick(item.href) }}
-              className="block text-xs text-term-dim hover:text-accent-500 transition-colors font-mono"
+              className="block text-sm text-gray-400 hover:text-white transition-colors"
             >
-              $ cat {item.label}
+              {item.label}
             </a>
           ))}
         </div>
