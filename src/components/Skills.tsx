@@ -15,9 +15,9 @@ export default function Skills() {
           {skills.map((skill) => (
             <div
               key={skill.name}
-              className="glass-card flex flex-col items-center gap-3 p-5"
+              className="glass-card flex flex-col items-center gap-3 p-5 group cursor-default"
             >
-              <i className={`${skill.icon} text-2xl md:text-3xl text-gray-400`} />
+              <i className={`${skill.icon} colored text-2xl md:text-3xl opacity-30 group-hover:opacity-100 transition-all duration-300`} />
               <span className="text-xs text-gray-500 text-center font-medium">
                 {skill.name}
               </span>
