@@ -6,7 +6,34 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: 'JetBrains Mono', monospace;
+}
+
 ::selection {
-  background-color: #10b981;
-  color: white;
+  background-color: #00ff41;
+  color: #0a0a0a;
+}
+
+.terminal-grid {
+  background-image: radial-gradient(circle, #1f1f1f 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.terminal-dot {
+  @apply w-3 h-3 rounded-full;
+}
+
+.terminal-dot.red { @apply bg-red-500; }
+.terminal-dot.yellow { @apply bg-yellow-500; }
+.terminal-dot.green { @apply bg-accent-500; }
+
+.terminal-prompt::before {
+  content: '$ ';
+  color: #00ff41;
+}
+
+.terminal-comment {
+  color: #555555;
+  font-style: italic;
 }
