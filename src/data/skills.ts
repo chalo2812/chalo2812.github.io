@@ -12,7 +12,6 @@ export const skills: Skill[] = [
   { name: 'Angular', icon: 'devicon-angularjs-plain' },
   { name: 'Vue.js', icon: 'devicon-vuejs-plain' },
   { name: 'Docker', icon: 'devicon-docker-plain' },
-  { name: 'AWS', icon: 'devicon-amazonwebservices-original' },
   { name: 'Android', icon: 'devicon-android-plain' },
   { name: 'PHP', icon: 'devicon-php-plain' },
   { name: 'SQL', icon: 'devicon-postgresql-plain' },

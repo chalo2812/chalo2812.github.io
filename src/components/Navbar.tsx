@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 const navItems = [
-  { label: 'Inicio', href: '#hero' },
+  { label: 'Inicio', href: '#home' },
   { label: 'Skills', href: '#skills' },
   { label: 'Proyectos', href: '#projects' },
   { label: 'Experiencia', href: '#experience' },
@@ -21,13 +21,15 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 glass">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <a
-          href="#hero"
-          onClick={(e) => { e.preventDefault(); handleClick('#hero') }}
+          href="#home"
+          onClick={(e) => { e.preventDefault(); handleClick('#home') }}
           className="flex items-center gap-3 text-gray-100 font-semibold"
         >
-          <span className="w-8 h-8 rounded-xl bg-gradient-to-br from-accent-400 to-accent-600 flex items-center justify-center text-white text-sm font-bold shadow-lg shadow-accent-500/20">
-            G
-          </span>
+          <img
+            src="https://media.licdn.com/dms/image/v2/C4D03AQFA3Asbg0NTDA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1617131363771?e=1781136000&v=beta&t=TQiMCXFbp1SG8vY01IGsh9sSygtE89zyxinERgIPcmo"
+            alt="Gonzalo Sola"
+            className="w-8 h-8 rounded-xl border border-white/10"
+          />
           Gonzalo Sola
         </a>
 

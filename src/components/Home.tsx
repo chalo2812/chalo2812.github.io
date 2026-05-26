@@ -1,17 +1,12 @@
-export default function Hero() {
+export default function Home() {
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-main pt-16">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-main pt-16">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-accent-500/10 blur-3xl animate-float" />
         <div className="absolute -bottom-40 -left-40 w-80 h-80 rounded-full bg-accent-300/10 blur-3xl animate-float" style={{ animationDelay: '-3s' }} />
       </div>
 
       <div className="relative z-10 text-center px-6 max-w-3xl mx-auto animate-fade-in">
-        <div className="glass-card inline-flex items-center gap-2 px-4 py-2 mb-6">
-          <span className="w-2 h-2 rounded-full bg-accent-500 animate-pulse" />
-          <span className="text-xs text-gray-500">Disponible para proyectos</span>
-        </div>
-
         <img
           src="https://media.licdn.com/dms/image/v2/C4D03AQFA3Asbg0NTDA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1617131363771?e=1781136000&v=beta&t=TQiMCXFbp1SG8vY01IGsh9sSygtE89zyxinERgIPcmo"
           alt="Gonzalo Sola"

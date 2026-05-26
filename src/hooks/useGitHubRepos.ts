@@ -19,7 +19,7 @@ export function useGitHubRepos(username: string) {
     fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=12`)
       .then((res) => res.json())
       .then((data: GitHubRepo[]) => {
-        setRepos(data.filter((r) => !r.fork).slice(0, 6))
+        setRepos(data.filter((r) => !r.fork && r.name !== 'chalo2812.github.io').slice(0, 6))
         setLoading(false)
       })
       .catch(() => setLoading(false))
