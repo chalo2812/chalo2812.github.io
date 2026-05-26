@@ -1,50 +1,25 @@
 {
   "name": "chalo2812",
-  "version": "1.0.0",
-  "description": "Portfolio",
-  "main": "index.html",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "netlify-deploy": "netlify deploy",
-    "netlify-build": "netlify build",
-    "netlify-serve": "netlify serve",
-    "netlify-deploy-prod": "netlify deploy --prod"
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
   },
-  "author": "Gonzalo Sola",
-  "license": "ISC",
   "dependencies": {
-    "@sideway/address": "^5.0.0",
-    "browserslist": "^4.23.0",
-    "joi": "^17.12.1",
-    "netlify-cli": "^17.16.2",
-    "npm": "^10.4.0",
-    "npm-run-script": "^0.0.4",
-    "react": "^18",
-    "react-dom": "^18",
-    "react-scripts": "^5.0.1"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "autoprefixer": "^10.0.1",
-    "eslint": "^5.16.0",
-    "postcss": "^8",
-    "tailwindcss": "^3.3.0",
-    "typescript": "4.1.6"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.6.3",
+    "vite": "^6.0.5"
   }
 }
