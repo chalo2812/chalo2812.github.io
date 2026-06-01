@@ -12,7 +12,6 @@ export const projects: Project[] = [
     description: 'Aplicación web interactiva con despliegue en Vercel.',
     tech: ['JavaScript'],
     github: 'https://github.com/chalo2812/impostor',
-    demo: 'https://impostor-phi-seven.vercel.app',
   },
   {
     title: 'Incremental',
