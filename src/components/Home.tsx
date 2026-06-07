@@ -9,6 +9,7 @@ export default function Home() {
   const badges = [
     { label: 'Java', icon: 'https://cdn.simpleicons.org/openjdk/10b981' },
     { label: 'Spring', icon: 'https://cdn.simpleicons.org/spring/10b981' },
+    { label: 'React', icon: 'https://cdn.simpleicons.org/react/06b6d4' },
     { label: 'Linux', icon: 'https://cdn.simpleicons.org/linux/e5e7eb' },
     { label: 'Docker', icon: 'https://cdn.simpleicons.org/docker/06b6d4' },
     { label: 'APIs', icon: 'https://cdn.simpleicons.org/openapiinitiative/10b981' },
@@ -41,9 +42,9 @@ export default function Home() {
             transformando ideas en codigo, con logs claros y deploys sin supersticion.
           </p>
 
-          <div className="flex flex-wrap justify-center lg:justify-start gap-2 mb-8">
+          <div className="grid grid-cols-3 gap-2 mb-8 max-w-xs mx-auto lg:mx-0">
             {badges.map((badge) => (
-              <span key={badge.label} className="inline-flex items-center gap-2.5 rounded-md border border-white/10 bg-white/[0.04] px-3.5 py-2 text-xs font-mono text-gray-300">
+              <span key={badge.label} className="inline-flex items-center justify-center gap-2.5 rounded-md border border-white/10 bg-white/[0.04] px-3.5 py-2 text-xs font-mono text-gray-300">
                 <img src={badge.icon} alt="" className="w-5 h-5" aria-hidden="true" />
                 {badge.label}
               </span>
