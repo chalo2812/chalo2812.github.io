@@ -54,12 +54,9 @@ export default function Skills() {
   return (
     <section id="skills" className="py-24 px-6 bg-gradient-main">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-2 text-gray-100">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-100">
           Skills
         </h2>
-        <p className="text-gray-500 text-center mb-14 text-sm">
-          Tecnologías con las que trabajo
-        </p>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-12 gap-4">
           {skills.map((skill, index) => (

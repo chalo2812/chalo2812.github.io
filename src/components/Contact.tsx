@@ -2,12 +2,9 @@ export default function Contact() {
   return (
     <section id="contact" className="py-24 px-6 bg-gradient-main">
       <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-2 text-gray-100">
+        <h2 className="text-3xl md:text-4xl font-bold mb-8 text-gray-100">
           Contacto
         </h2>
-        <p className="text-gray-500 mb-12 text-sm">
-          Conectemos
-        </p>
 
         <div className="flex items-center justify-center gap-4">
           <a

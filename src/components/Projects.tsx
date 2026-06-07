@@ -4,12 +4,9 @@ export default function Projects() {
   return (
     <section id="projects" className="py-24 px-6 bg-gradient-main">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-2 text-gray-100">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-100">
           Proyectos
         </h2>
-        <p className="text-gray-500 text-center mb-14 text-sm">
-          Desarrollo, prácticas y proyectos personales
-        </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {projects.map((project) => (
