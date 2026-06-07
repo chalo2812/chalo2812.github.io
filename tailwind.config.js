@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./index.html",
@@ -35,6 +34,9 @@ export default {
           '0%, 100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-10px)' },
         },
+      },
+      gridColumn: {
+        'span-1-5': 'span 1.5 / span 1.5',
       },
     },
   },

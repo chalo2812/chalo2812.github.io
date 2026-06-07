@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const navItems = [
   { label: 'Inicio', href: '#home' },
@@ -10,6 +10,18 @@ const navItems = [
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
+  const [showBrand, setShowBrand] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowBrand(window.scrollY > 120)
+    }
+
+    handleScroll()
+    window.addEventListener('scroll', handleScroll, { passive: true })
+
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   const handleClick = (href: string) => {
     setOpen(false)
@@ -23,7 +35,11 @@ export default function Navbar() {
         <a
           href="#home"
           onClick={(e) => { e.preventDefault(); handleClick('#home') }}
-          className="flex items-center gap-3 text-gray-100 font-semibold"
+          className={`flex items-center gap-3 text-gray-100 font-semibold transition-all duration-300 ${
+            showBrand ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'
+          }`}
+          aria-hidden={!showBrand}
+          tabIndex={showBrand ? 0 : -1}
         >
           <img
             src="https://media.licdn.com/dms/image/v2/C4D03AQFA3Asbg0NTDA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1617131363771?e=1781136000&v=beta&t=TQiMCXFbp1SG8vY01IGsh9sSygtE89zyxinERgIPcmo"

@@ -7,10 +7,10 @@ export default function GitHubRepos() {
     <section id="github" className="py-24 px-6 bg-gradient-main">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-2 text-gray-100">
-          GitHub
+          Proyectos personales
         </h2>
         <p className="text-gray-500 text-center mb-14 text-sm">
-          Últimos repositorios públicos
+          Desarrollo y repositorios públicos
         </p>
 
         {loading ? (
