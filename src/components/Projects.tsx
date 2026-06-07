@@ -7,7 +7,6 @@ export default function Projects() {
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-100">
           Proyectos
         </h2>
-
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {projects.map((project) => (
             <div key={project.title} className="glass-card p-6">
@@ -17,7 +16,6 @@ export default function Projects() {
               <p className="text-sm text-gray-500 mb-4 leading-relaxed">
                 {project.description}
               </p>
-
               <div className="flex flex-wrap gap-2 mb-5">
                 {project.tech.map((t) => (
                   <span

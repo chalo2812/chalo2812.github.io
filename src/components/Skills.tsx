@@ -62,9 +62,11 @@ export default function Skills() {
           {skills.map((skill, index) => (
             <div
               key={skill.name}
-              className={`glass-card min-h-32 flex flex-col items-center justify-center gap-3 p-5 group cursor-default bg-gray-900/30 ${getSpan(index)}`}
+              className={`glass-card min-h-32 flex flex-col items-center justify-center gap-3 p-5 
+                  group cursor-default bg-gray-900/30 ${getSpan(index)}`}
             >
-              <i className={`${skill.icon} colored text-4xl md:text-5xl grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300`} />
+              <i className={`${skill.icon} colored text-4xl md:text-5xl grayscale opacity-60 group-hover:grayscale-0 
+                  group-hover:opacity-100 transition-all duration-300`} />
               <span className="text-sm text-gray-400 group-hover:text-gray-200 text-center font-medium transition-colors duration-300">
                 {skill.name}
               </span>
