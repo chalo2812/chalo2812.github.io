@@ -6,13 +6,9 @@ export default function GitHubRepos() {
   return (
     <section id="github" className="py-24 px-6 bg-gradient-main">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-2 text-gray-100">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-100">
           Proyectos personales
         </h2>
-        <p className="text-gray-500 text-center mb-14 text-sm">
-          Desarrollo y repositorios públicos
-        </p>
-
         {loading ? (
           <div className="flex justify-center">
             <div className="w-8 h-8 border-2 border-accent-500 border-t-transparent rounded-full animate-spin" />
