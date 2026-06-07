@@ -33,7 +33,7 @@ export default function Home() {
           </h1>
 
           <p className="text-lg md:text-xl text-gray-300 mb-3 font-light">
-            Desarrollador Java Senior en modo terminal.
+            Fullstack Senior
           </p>
 
           <p className="text-gray-500 max-w-xl mx-auto lg:mx-0 mb-8 text-sm leading-relaxed">
@@ -51,20 +51,6 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-            <a
-              href="#projects"
-              onClick={(e) => { e.preventDefault(); document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' }) }}
-              className="w-full sm:w-auto px-6 py-3 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-semibold transition-all shadow-lg shadow-emerald-500/20"
-            >
-              ./ver-proyectos
-            </a>
-            <a
-              href="#contact"
-              onClick={(e) => { e.preventDefault(); document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' }) }}
-              className="w-full sm:w-auto px-6 py-3 rounded-lg glass-hover text-gray-300 font-medium transition-all"
-            >
-              ssh contacto
-            </a>
           </div>
         </div>
 
